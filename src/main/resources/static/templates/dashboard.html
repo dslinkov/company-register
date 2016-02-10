@@ -1,0 +1,13 @@
+    <div ng-controller="DashboardController" ng-cloak class="ng-cloak">
+
+	    <div ng-repeat="company in companies">
+
+			<div><strong>ID: {{company.id}}</strong></div>
+			<div>Name: <a href="company/{{company.id}}">{{company.name}}</a></div>
+			<div>Address: {{company.address}}</div>
+			<div>City: {{company.city}}</div>
+			<div>Country: {{company.country}}</div>
+			<div>Phone: {{company.phone}}</div>
+			<div>Email: {{company.email}}</div>
+	    </div>
+    </div>

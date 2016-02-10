@@ -1,0 +1,20 @@
+/target/
+/.classpath
+/.mvn
+/.project
+/org.eclipse.core.resources.prefs
+/org.eclipse.jdt.core.prefs
+/org.eclipse.m2e.core.prefs
+/org.eclipse.wst.common.component
+/org.eclipse.wst.common.project.facet.core.xml
+/.settings/
+/.springBeans
+/mvnw
+/mvnw.cmd
+/data
+
+# ignore for jrebel config file
+/src/main/resources/rebel.xml
+*.iml
+/.idea
+/.tern-project
