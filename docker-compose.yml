@@ -393,4 +393,3 @@
   command: 'bash -c ''r'''
   working_dir: /app/user
   environment:
-shell: null
