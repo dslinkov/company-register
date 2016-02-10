@@ -1,4 +1,11 @@
     <div ng-controller="EmployeeController" ng-cloak class="ng-cloak">
-
-{{companyEmployees}}
+    	<div>Employees:</div>
+    	<ul>
+    		<li ng-repeat="employee in companyEmployees.employees">
+    			{{employee.id}}
+    			{{employee.firstName}}
+    			{{employee.lastName}}
+    			{{employee.position}}
+    		</li>
+    	</ul>
     </div>

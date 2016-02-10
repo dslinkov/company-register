@@ -1,0 +1,51 @@
+<div ng-controller="CompanyController">
+
+    <form name="companyForm" ng-submit="addNewCompany()" novalidate method="POST">
+
+        <!-- NAME -->
+        <div class="form-group" ng-class="{ 'has-error' : companyForm.name.$invalid && !companyForm.name.$pristine }">
+            <label>Company Name</label>
+            <input type="text" name="name" class="form-control" ng-model="company.name" required>
+            <p ng-show="companyForm.name.$invalid && !companyForm.name.$pristine" class="help-block">Company name is required.</p>
+        </div>
+
+        <!-- ADDRESS -->
+        <div class="form-group" ng-class="{ 'has-error' : companyForm.address.$invalid && !companyForm.address.$pristine }">
+            <label>Address</label>
+            <input type="text" name="address" class="form-control" ng-model="company.address" required>
+            <p ng-show="companyForm.address.$invalid && !companyForm.address.$pristine" class="help-block">Company address is required.</p>
+        </div>
+
+        <!-- CITY -->
+        <div class="form-group" ng-class="{ 'has-error' : companyForm.city.$invalid && !companyForm.city.$pristine }">
+            <label>City</label>
+            <input type="text" name="city" class="form-control" ng-model="company.city" required>
+            <p ng-show="companyForm.city.$invalid && !companyForm.city.$pristine" class="help-block">City is required.</p>
+        </div>
+
+        <!-- COUNTRY -->
+        <div class="form-group" ng-class="{ 'has-error' : companyForm.country.$invalid && !companyForm.country.$pristine }">
+            <label>Country</label>
+            <input type="text" name="country" class="form-control" ng-model="company.country" required>
+            <p ng-show="companyForm.country.$invalid && !companyForm.country.$pristine" class="help-block">Country is required.</p>
+        </div>
+
+        <!-- EMAIL -->
+        <div class="form-group" ng-class="{ 'has-error' : companyForm.email.$invalid && !companyForm.email.$pristine }">
+            <label>Email</label>
+            <input type="email" name="email" class="form-control" ng-model="company.email">
+            <p ng-show="companyForm.email.$invalid && !companyForm.email.$pristine" class="help-block">Enter a valid email.</p>
+        </div>
+
+        <!-- PHONE -->
+        <div class="form-group" ng-class="{ 'has-error' : companyForm.phone.$invalid && !companyForm.phone.$pristine }">
+            <label>Phone</label>
+            <input type="phone" name="phone" class="form-control" ng-model="company.phone">
+            <p ng-show="companyForm.phone.$invalid && !companyForm.phone.$pristine" class="help-block">Enter a valid phone number.</p>
+        </div>
+
+        <button type="submit" class="btn btn-primary" ng-disabled="userForm.$invalid">Submit</button>
+{{companyForm.$valid}}
+    </form>
+
+</div>

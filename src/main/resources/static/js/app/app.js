@@ -45,5 +45,8 @@ tinyApp.config(['$routeProvider', function($routeProvider) {
 	}).when('/registry/home', {
 		templateUrl : 'templates/dashboard.html',
 		controller : 'DashboardController'
+	}).when('/registry/add-company', {
+		templateUrl : 'templates/company.html',
+		controller : 'CompanyController'
 	})
 } ]);
