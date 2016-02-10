@@ -1,0 +1,7 @@
+{
+  "name": "Tiny Construction App",
+  "description": "Small Spring App deployed ti Heroku.",
+  "website": "",
+  "repository": "https://github.com/dslinkov/company-registry",
+  "image": "heroku/java"
+}
