@@ -11,7 +11,8 @@ In this exercise I decided not to use HATEOAS.  However, adding it would be triv
 ### List All Available Companies ###
 
 **Request**
-`curl -X GET -H "Content-Type: application/json" -H "Cache-Control: no-cache" -H "http://very-good-company.herokuapp.com/registry/api/company"`
+
+	curl -X GET -H "Content-Type: application/json" -H "Cache-Control: no-cache" -H "http://very-good-company.herokuapp.com/registry/api/company"
 
 **Response**
 
@@ -156,7 +157,6 @@ In this exercise I decided not to use HATEOAS.  However, adding it would be triv
 **Request**
 
 	curl -X POST -H "Content-Type: application/json" -H "Cache-Control: no-cache" -H -d '    {
-	      "id": 2,
 	      "firstName": "Taysom",
 	      "lastName": "Hill",
 	      "position": "QB/RB"
@@ -176,7 +176,7 @@ In this exercise I decided not to use HATEOAS.  However, adding it would be triv
 
 **Request**
 
-	curl -X PUT -H "Content-Type: application/json" -H "Cache-Control: no-cache" -H "Postman-Token: e76fabca-4ed7-59a5-46fb-ba83843acea0" -d '    {
+	curl -X PUT -H "Content-Type: application/json" -H "Cache-Control: no-cache" -H -d '    {
 	      "firstName": "Taysom",
 	      "lastName": "Hill",
 	      "position": "QB"
