@@ -60,7 +60,8 @@ In this exercise I decided not to use HATEOAS.  However, adding it would be triv
 ### Retrieve a specific company ###
 
 **Request**
-	`curl -X GET -H "Content-Type: application/json" -H "Cache-Control: no-cache" -H "http://very-good-company.herokuapp.com/registry/api/company/3"`
+
+	curl -X GET -H "Content-Type: application/json" -H "Cache-Control: no-cache" -H "http://very-good-company.herokuapp.com/registry/api/company/3"
 
 **Response**
 
